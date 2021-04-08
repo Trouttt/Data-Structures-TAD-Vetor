@@ -19,22 +19,22 @@ void removeElement(){              //remove um elemente(no caso, substitui ele p
     scanf("%d", &element);
     for(i = 0; i < numElement; i++ ){
         if(Set[i] == element){
-            Set[i] = 0;
-            printf("\nElemento deletado:%d", element);
-            validator = 1;
+            Set[i] = 0;   //remove o elemento substituindo ele por 0
+            printf("\nElemento deletado:%d", element);  
         };
     };
-    for(i = 0; i < numElement; i++ ){
+    for(i = 0; i < numElement; i++ ){   //Roda um vetor pra mostrar os elementos atuais do conjunto
         printf("| %d ", Set[i]);
     }
 };
 void testNumber(){
     validator = 0;
     printf("\nQual elemento vocÊ gostaria de verificar se existe no conjunto?");
-    scanf("%d", &element);
+    scanf("%d", &element);     
     for(i = 0; i < numElement; i++ ){
         if(Set[i] == element){
             printf("%d existe dentro do conjunto\n", element);
+                        //ele verifica se o elemento existe no conjunto
             validator = 1;
         }
     };
@@ -44,7 +44,7 @@ void testNumber(){
 };
 void testEmpty(){
     if(Set[0] == 0){
-        printf("vetor nulo");
+        printf("vetor nulo");   //se na posição 0, o vetor for 0, então eu considero ele nulo                
     }else{
         printf("vetor nao nulo");
     }
