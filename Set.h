@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int cont, element, numElement, *Set, i;
+
+int cont, element, numElement, *Set, i, validator;
+
 
 void createSet(); //cria um conjunto.
 void insertElement(); //insere um elemento no conjunto.
